@@ -243,6 +243,8 @@ a:hover::after {
 }
 /*  ↑-------------- main --------------↑*/
 
+/*  ↓------------- footer --------------↓*/
+
 footer {
   display: flex;
   justify-content: center;

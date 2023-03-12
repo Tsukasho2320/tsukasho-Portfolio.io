@@ -28,8 +28,8 @@
     </header>
       <div class="border-lightblue">
         <ul class="sp-header-list">
-          <a href="#main-works-title" alt="worksへ移動"><li class="header-works pointer"><span id="works-buttom">works</span></li></a>
-          <a href="#main-about-title" alt="aboutへ移動"><li class="header-about pointer"><span id="header-about-buttom">about</span></li></a>
+          <a href="#" alt="worksへ移動"><li class="header-works pointer"><span id="sp-works-buttom">works</span></li></a>
+          <a href="#" alt="aboutへ移動"><li class="header-about pointer"><span id="header-about-buttom">about</span></li></a>
         </ul>
       </div>
     <div class="main">
@@ -74,7 +74,7 @@
     </div>
     <footer>
       <ul class="footer-list">
-        <a href="#main-works-title" alt="worksへ移動"><li class="footer-works pointer">works</li></a>
+        <a href="#main-works-title" alt="worksへ移動"><li class="footer-works pointer"><span id="footer-works-buttom">works</span></li></a>
         <img src="img\footer\icon_148272_32.png" class="footer-icon pointer">
         <a href="#main-about-title" alt="aboutへ移動"><li class="footer-about pointer"><span id="footer-about-buttom">about</span></li></a>
       </ul>
@@ -82,7 +82,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
       <script>
         /*↓----------------フッターのアイコンをクリックしてTopに移動----------------↓*/
-        // セレクタ名（.pagetop）に一致する要素を取得
         const footer_icon_Top = document.querySelector(".footer-icon");
 
         // .pagetopをクリックしたら
@@ -92,17 +91,21 @@
         function scroll_top() {
           window.scroll({ top: 0, behavior: "smooth" });
         }
-
-        $("#works-buttom").click(function () {
-          const worksTitle = $('#main-works-title').offset().top;
+        </script>
+        <!-----------worksテキストをクリックしてmain-works-titleに移動----------->
+        <script>
+        $("#works-buttom,#sp-works-buttom,#footer-works-buttom").click(function () {
+          const works_title = $('#main-works-title').offset().top;
           const speed = 600;
-          $("html,body").animate({scrollTop:worksTitle},speed);
+          $("html,body").animate({scrollTop:works_title},speed);
         });
-
-      $("#header-about-buttom,#footer-about-buttom").click(function () {
-          const position = $('#main-about-title').offset().top;
+      </script>
+      <!-----------aboutテキストをクリックしてmain-about-titleに移動----------->
+      <script>
+       $("#header-about-buttom,#footer-about-buttom").click(function () {
+          const about_title = $('#main-about-title').offset().top;
           const speed = 600;
-          $("html,body").animate({scrollTop:position},speed);
+          $("html,body").animate({scrollTop:about_title},speed);
         });
       </script>
   </body>

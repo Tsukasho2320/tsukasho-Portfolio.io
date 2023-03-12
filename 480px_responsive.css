@@ -1,8 +1,4 @@
 @media screen and (max-width: 480px) { 
-
-/*全体の設定*/
-  
-
   body{
     margin: 0px;
   }
@@ -88,7 +84,6 @@
     list-style: none;
     margin:0 auto;
     padding-left:0;
-    align-items:center;
     justify-content:space-around;
   }
   .sp-header-list li{
@@ -209,7 +204,6 @@
   .main-works-fitst_photo {
     width:80%;
     margin: 0 auto;
-
   }
   .Tsukadashou-portfolio {
     position: relative;
@@ -220,7 +214,7 @@
   }
   .main-works-second_photo {
     width:80%;
-    margin: 0 auto;
+    margin: 20px auto;
   }
   .Kovaak-portfolio {
     position: relative;
@@ -254,8 +248,9 @@
     border-radius: 40px;
     margin: 0 auto;
   }
-  /*  ↑-------------- main --------------↑*/
-  
+  /*↑-------------- main --------------↑*/
+
+  /*↓-------------- footer --------------↓*/
   footer {
     display: flex;
     justify-content: center;
@@ -289,5 +284,4 @@
     z-index: 6;
     margin: 0px 20px;
   }
-  
 } 
